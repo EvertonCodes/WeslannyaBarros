@@ -1,13 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import {
-  ArrowDown,
-  Mail,
-  Linkedin,
-  Instagram,
-  BookOpen,
-} from "lucide-react"
+import { ArrowDown, Mail, Linkedin, Instagram, BookOpen } from "lucide-react"
 import { useEffect, useState } from "react"
 import { TypeAnimation } from "react-type-animation"
 
@@ -27,16 +21,14 @@ export function Hero() {
 
   return (
     <section
-      className="min-h-screen flex items-center relative overflow-hidden"
       id="hero"
+      className="min-h-screen flex items-start sm:items-center relative overflow-hidden pt-32 md:pt-0"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-16">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Texto principal */}
           <div
-            className={`space-y-6 ${
-              isVisible ? "animate-slide-up" : "opacity-0"
-            }`}
+            className={`space-y-6 ${isVisible ? "animate-slide-up" : "opacity-0"}`}
           >
             <div className="space-y-3 text-center lg:text-left">
               {/* Tag superior */}
@@ -47,15 +39,14 @@ export function Hero() {
 
               {/* Título ajustado para nunca cortar */}
               <h1
-                className="font-bold tracking-tight 
-                           text-center lg:text-left 
+                className="font-bold tracking-tight text-center lg:text-left 
                            !leading-normal sm:!leading-snug lg:!leading-tight 
                            whitespace-normal break-words text-balance 
                            w-full !max-w-none"
                 style={{
-                  fontSize: "clamp(1.5rem, 5vw, 3.5rem)", // responsivo
+                  fontSize: "clamp(1.5rem, 5vw, 3.5rem)",
                   lineHeight: "1.3",
-                  overflowWrap: "anywhere", // força quebra
+                  overflowWrap: "anywhere",
                   wordBreak: "break-word",
                 }}
               >
