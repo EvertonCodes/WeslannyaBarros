@@ -74,14 +74,11 @@ export function About() {
             <Sparkles className="h-6 w-6 text-primary animate-bounce-gentle" />
           </div>
           <p className="text-lg text-gray-600 leading-relaxed mt-4">
-            Sou estudante do{" "}
+            Fui aprovada em{" "}
             <span className="text-primary font-semibold">
-              2º período de Fisioterapia
+              1º lugar no Prouni
             </span>{" "}
-            na Universidade Federal. Fascinada pelo movimento humano, acredito
-            que cada gesto pode transformar vidas. Minha jornada está apenas
-            começando, explorando anatomia, fisiologia e técnicas que unem
-            ciência e cuidado.
+            e agora sou estudante de Fisioterapia na Uninassau – Boa Viagem. Fascinada pelo movimento humano, acredito que cada gesto pode transformar vidas. Minha jornada está apenas começando, explorando anatomia, fisiologia e técnicas que unem ciência e cuidado.
           </p>
         </div>
 

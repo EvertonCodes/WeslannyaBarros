@@ -39,9 +39,9 @@ export function Projects() {
   const projects: Project[] = [
     {
       title: "Grupo de Estudos - Anatomia e Fisiologia",
-      type: "Liderança Acadêmica",
+      type: "Atividade Acadêmica",
       description:
-        "Coordenação de grupo de estudos semanal com colegas do curso, focando em anatomia humana e fisiologia básica. Organização de materiais, cronogramas de estudo e sessões de revisão.",
+        "Participação em grupo de estudos semanal com colegas do curso, focando em anatomia humana e fisiologia básica. Colaboração na organização de materiais e sessões de revisão.",
       highlights: ["Encontros semanais", "Alunos ativos", "Material colaborativo"],
       icon: Users,
       status: "Em andamento",

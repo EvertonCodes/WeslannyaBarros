@@ -23,12 +23,10 @@ export function Skills() {
   }, [])
 
   const technicalSkills = [
-    { name: "Anatomia Humana", level: 98 },
-    { name: "Fisiologia", level: 95 },
-    { name: "Avaliação Fisioterapêutica Básica", level: 90 },
-    { name: "Cinesiologia e Biomecânica", level: 85 },
-    { name: "Exercícios Terapêuticos I", level: 85 },
-    { name: "Fundamentos de Reabilitação", level: 85 },
+    { name: "Fisioterapia Profissão e Carreira", level: 100 },
+    { name: "Saúde Coletiva", level: 100 },
+    { name: "Bioestatística", level: 100 },
+    { name: "Biossegurança e Bioética", level: 100 },
   ]
 
   const softSkills = [
@@ -47,7 +45,7 @@ export function Skills() {
   const areas = [
     {
       title: "Fisioterapia Neurológica",
-      description: "Reabilitação de pacientes com lesões do sistema nervoso central e periférico.",
+      description: "Especialização em Bobath, com foco na reabilitação de pacientes com lesões do sistema nervoso central e periférico.",
     },
     {
       title: "Fisioterapia em UTI",

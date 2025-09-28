@@ -47,7 +47,7 @@ export function Education() {
       institution: "ETE Luiz Alves Lacerda",
       period: "2021 - 2023",
       description:
-        "Monitoria de Português e Biologia, protagonista da sala, com foco em liderança e trabalho em equipe.",
+        "Monitoria de Português e Biologia, com foco em colaboração, aprendizado contínuo e trabalho em equipe.",
       status: "Concluído - Redação 900/1000",
       highlight: false,
     },

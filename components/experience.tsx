@@ -24,11 +24,11 @@ export function Experience() {
 
   const experiences = [
     {
-      title: "Instrutora do Grupo de Estudos - Anatomia e Fisiologia",
+      title: "Integrante do Grupo de Estudos - Anatomia e Fisiologia",
       location: "Uninassau",
       period: "2025 - Atual",
       description:
-        "Atuando como instrutora em grupo de estudos com colegas do curso, ministrando sessões colaborativas e auxiliando na compreensão de anatomia humana e fisiologia.",
+        "Compartilhando conhecimento com o grupo de estudos com colegas do curso, ministrando sessões colaborativas e auxiliando na compreensão de anatomia humana e fisiologia.",
       highlights: ["Ensino colaborativo", "Orientação", "Organização de conteúdos"],
       icon: Users,
       current: true,
@@ -48,7 +48,7 @@ export function Experience() {
       location: "UFPE - Clínica Escola de Fisioterapia",
       period: "2025",
       description:
-        "Participação em visita técnica à Clínica Escola de Fisioterapia da UFPE, observando atendimentos e técnicas de reabilitação aplicadas a diferentes tipos de pacientes, com foco em mobilidade e fortalecimento.",
+        "Participação em visita técnica à Clínica Escola de Fisioterapia da UFPE, observando os equipamentos de reabilitação aplicada a diferentes tipos de pacientes, com foco em mobilidade e fortalecimento.",
       highlights: ["Observação prática", "Fisioterapia aplicada", "Reabilitação"],
       icon: BookOpen,
       current: true,

@@ -45,27 +45,39 @@ export function Hero() {
                 <span>2º Período • Fisioterapia</span>
               </div>
 
-             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-center lg:text-left">
-  <span className="text-foreground block">Olá, eu sou</span>
-  <span className="text-primary block">Weslânnya Barros</span>
-</h1>
+              {/* Título ajustado para nunca cortar */}
+              <h1
+                className="font-bold tracking-tight 
+                           text-center lg:text-left 
+                           !leading-normal sm:!leading-snug lg:!leading-tight 
+                           whitespace-normal break-words text-balance 
+                           w-full !max-w-none"
+                style={{
+                  fontSize: "clamp(1.5rem, 5vw, 3.5rem)", // responsivo
+                  lineHeight: "1.3",
+                  overflowWrap: "anywhere", // força quebra
+                  wordBreak: "break-word",
+                }}
+              >
+                <span className="text-foreground block">Olá, eu sou</span>
+                <span className="text-primary block">Weslânnya Barros</span>
+              </h1>
 
               {/* Texto com efeito de digitação */}
-           <TypeAnimation
-  sequence={[
-    "Estudante de Fisioterapia",
-    2000,
-    "Apaixonada por Reabilitação",
-    2000,
-    "Explorando o movimento humano",
-    2000,
-  ]}
-  wrapper="p"
-  className="text-lg sm:text-xl md:text-2xl lg:text-3xl bg-gradient-to-r from-primary/100 to-accent/100 bg-clip-text text-transparent"
-  speed={50}
-  repeat={Infinity}
-/>
-
+              <TypeAnimation
+                sequence={[
+                  "Estudante de Fisioterapia",
+                  2000,
+                  "Apaixonada por Reabilitação",
+                  2000,
+                  "Explorando o movimento humano",
+                  2000,
+                ]}
+                wrapper="p"
+                className="text-lg sm:text-xl md:text-2xl lg:text-3xl bg-gradient-to-r from-primary/100 to-accent/100 bg-clip-text text-transparent"
+                speed={50}
+                repeat={Infinity}
+              />
 
               {/* Descrição */}
               <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl mx-auto lg:mx-0">
@@ -85,61 +97,59 @@ export function Hero() {
                 <Mail className="mr-2 h-4 w-4" />
                 Vamos Conversar
               </Button>
-             <Button
-  variant="outline"
-  size="lg"
-  onClick={() => scrollToSection("sobre")}
-  className="border-primary/40 text-primary/80 hover:bg-primary/10 hover:text-primary transition-transform hover:scale-105"
->
-  Minha Jornada
-  <ArrowDown className="ml-2 h-4 w-4" />
-</Button>
+              <Button
+                variant="outline"
+                size="lg"
+                onClick={() => scrollToSection("sobre")}
+                className="border-primary/40 text-primary/80 hover:bg-primary/10 hover:text-primary transition-transform hover:scale-105"
+              >
+                Minha Jornada
+                <ArrowDown className="ml-2 h-4 w-4" />
+              </Button>
             </div>
 
-            {/* Redes sociais com verde oliva elegante */}
-<div className="flex gap-4 justify-center lg:justify-start mt-4">
-  <a
-    href="https://www.linkedin.com/in/wesl%C3%A2nnya-barros/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-10 h-10 flex items-center justify-center rounded-full border border-[#6B8E23]/50 text-[#6B8E23] 
-               hover:bg-[#6B8E23]/20 hover:text-[#556B2F] transition-colors duration-300"
-    title="LinkedIn"
-  >
-    <Linkedin className="h-5 w-5" />
-  </a>
+            {/* Redes sociais */}
+            <div className="flex gap-4 justify-center lg:justify-start mt-4">
+              <a
+                href="https://www.linkedin.com/in/wesl%C3%A2nnya-barros/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 flex items-center justify-center rounded-full border border-[#6B8E23]/50 text-[#6B8E23] 
+                           hover:bg-[#6B8E23]/20 hover:text-[#556B2F] transition-colors duration-300"
+                title="LinkedIn"
+              >
+                <Linkedin className="h-5 w-5" />
+              </a>
 
-  <a
-    href="https://www.instagram.com/fisioweslannyabarros/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-10 h-10 flex items-center justify-center rounded-full border border-[#6B8E23]/50 text-[#6B8E23] 
-               hover:bg-[#6B8E23]/20 hover:text-[#556B2F] transition-colors duration-300"
-    title="Instagram"
-  >
-    <Instagram className="h-5 w-5" />
-  </a>
+              <a
+                href="https://www.instagram.com/fisioweslannyabarros/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 flex items-center justify-center rounded-full border border-[#6B8E23]/50 text-[#6B8E23] 
+                           hover:bg-[#6B8E23]/20 hover:text-[#556B2F] transition-colors duration-300"
+                title="Instagram"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
 
-  <a
-    href="mailto:fisioweslannyab@gmail.com"
-    className="w-10 h-10 flex items-center justify-center rounded-full border border-[#6B8E23]/50 text-[#6B8E23] 
-               hover:bg-[#6B8E23]/20 hover:text-[#556B2F] transition-colors duration-300"
-    title="Email"
-  >
-    <Mail className="h-5 w-5" />
-  </a>
-</div>
+              <a
+                href="mailto:fisioweslannyab@gmail.com"
+                className="w-10 h-10 flex items-center justify-center rounded-full border border-[#6B8E23]/50 text-[#6B8E23] 
+                           hover:bg-[#6B8E23]/20 hover:text-[#556B2F] transition-colors duration-300"
+                title="Email"
+              >
+                <Mail className="h-5 w-5" />
+              </a>
+            </div>
           </div>
 
-          {/* Foto + efeito + tags fixas */}
+          {/* Foto + efeito */}
           <div
-            className={`relative ${
-              isVisible ? "animate-fade-in" : "opacity-0"
-            }`}
+            className={`relative ${isVisible ? "animate-fade-in" : "opacity-0"}`}
             style={{ animationDelay: "0.3s" }}
           >
             <div className="relative mx-auto max-w-[280px] sm:max-w-sm md:max-w-md group">
-              {/* Efeito de brilho mais suave */}
+              {/* Efeito de brilho */}
               <div className="absolute -inset-4 bg-gradient-to-r from-teal-300/10 to-emerald-400/10 rounded-3xl blur-2xl opacity-30 group-hover:opacity-60 transition duration-500"></div>
               <div className="relative aspect-square overflow-hidden rounded-2xl shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:rotate-[1deg] group-hover:shadow-[0_0_15px_2px_rgba(45,212,191,0.3)]">
                 <img
