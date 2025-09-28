@@ -22,7 +22,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-start sm:items-center relative overflow-hidden pt-20 md:pt-0"
+      className="min-h-screen flex items-start sm:items-center relative overflow-hidden pt-28 md:pt-0"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-16">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
@@ -140,15 +140,19 @@ export function Hero() {
             style={{ animationDelay: "0.3s" }}
           >
             <div className="relative mx-auto max-w-[280px] sm:max-w-sm md:max-w-md group">
-              {/* Efeito de brilho */}
-              <div className="absolute -inset-4 bg-gradient-to-r from-teal-300/10 to-emerald-400/10 rounded-3xl blur-2xl opacity-30 group-hover:opacity-60 transition duration-500"></div>
-              <div className="relative aspect-square overflow-hidden rounded-2xl shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:rotate-[1deg] group-hover:shadow-[0_0_15px_2px_rgba(45,212,191,0.3)]">
+              {/* Efeito de brilho sempre visível no mobile */}
+              <div className="absolute -inset-4 bg-gradient-to-r from-teal-300/10 to-emerald-400/10 rounded-3xl blur-2xl 
+                              opacity-30 sm:group-hover:opacity-60 transition duration-500"></div>
+
+              <div className="relative aspect-square overflow-hidden rounded-2xl shadow-lg transform transition-transform duration-500
+                              group-hover:scale-105 group-hover:rotate-[1deg] group-hover:shadow-[0_0_15px_2px_rgba(45,212,191,0.3)]
+                              active:scale-105 active:rotate-[1deg] active:shadow-[0_0_15px_2px_rgba(45,212,191,0.3)]">
                 <img
                   src="/weslannyab.jpg"
                   alt="Weslânnya Barros - Estudante de Fisioterapia"
                   className="w-full h-full object-cover rounded-2xl"
                 />
-                <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-black/30 opacity-0 sm:group-hover:opacity-40 active:opacity-40 transition-opacity duration-500"></div>
               </div>
             </div>
           </div>
