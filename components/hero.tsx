@@ -22,7 +22,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-start sm:items-center relative overflow-hidden pt-28 md:pt-0"
+      className="min-h-screen flex items-start sm:items-center relative overflow-hidden pt-20 md:pt-0"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-16">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
