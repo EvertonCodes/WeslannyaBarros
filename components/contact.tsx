@@ -18,7 +18,7 @@ export function Contact() {
   })
   const [isVisible, setIsVisible] = useState(false)
   const [pressedIndex, setPressedIndex] = useState<number | null>(null)
-  const [isLoading, setIsLoading] = useState(false) // ✅ Estado de carregamento
+  const [isLoading, setIsLoading] = useState(false)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -37,23 +37,23 @@ export function Contact() {
   const handlePressStart = (idx: number) => () => setPressedIndex(idx)
   const handlePressEnd = () => setPressedIndex(null)
 
-  // 🔥 handleSubmit com EmailJS e spinner
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    setIsLoading(true) // Inicia o carregamento
+    setIsLoading(true)
 
-    emailjs
-      .send(
-        "service_p5k7dvn",
-        "template_96y2qgp",
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
-        },
-        "4YPfKkPsv41P65REF"
-      )
+    emailjs.send(
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE,
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE,
+      {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      },
+      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+
+    )
       .then(() => {
         alert("✅ Mensagem enviada com sucesso!")
         setFormData({ name: "", email: "", subject: "", message: "" })
@@ -106,9 +106,8 @@ export function Contact() {
       <div className="container mx-auto px-4">
         {/* Título */}
         <div
-          className={`max-w-3xl mx-auto text-center mb-16 transition-all duration-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
-          }`}
+          className={`max-w-3xl mx-auto text-center mb-16 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+            }`}
         >
           <h2 className="text-4xl font-bold mb-6 text-gray-800">Entre em Contato</h2>
           <p className="text-lg text-gray-600 leading-relaxed">
